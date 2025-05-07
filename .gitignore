@@ -1,0 +1,16 @@
+# Pastas de configuração e binários
+.vscode/
+executaveis/
+build/
+bin/
+obj/
+
+# Arquivos binários e objetos em qualquer lugar
+*.o
+*.out
+*.exe
+*.bin
+
+# Backups do VS Code ou editores
+*~
+*.swp
