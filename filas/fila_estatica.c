@@ -1,4 +1,3 @@
-// Fila (Queue): estrutura do tipo FIFO (primeiro a entrar, primeiro a sair).
 // Fiz em sala com meu amigo Eric, dia 05/05/2025
 
 #include <stdio.h>
@@ -13,7 +12,7 @@ typedef struct{
 
 Fila *criar_fila(){
     Fila *fila = (Fila *)malloc(sizeof(Fila)); // (Fila*) converte o ponteiro genérico pra um
-                                               // ponteiro do tipo certo, no caso, Fila*.
+    // ponteiro do tipo certo, no caso, Fila*.
     fila->tamanho = 0;
     return fila;
 }
@@ -41,7 +40,7 @@ void inserir_valor(Fila *fila, int valor){
         fila->tamanho++;
         return;
     }
-    printf("Fila cheia.\n");
+    printf("Fila cheia\n");
 }
 
 void remover_valor(Fila *fila){
@@ -54,7 +53,7 @@ void remover_valor(Fila *fila){
         fila->tamanho--;
         return;
     }
-    printf("Fila vazia.\n");
+    printf("Fila vazia\n");
 }
 
 void mostrar_fila(Fila *fila){
